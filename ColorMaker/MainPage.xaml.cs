@@ -56,7 +56,8 @@ public partial class MainPage : ContentPage
 
      private async void ImageButton_Clicked(object sender, EventArgs e)
      {
-		  await Clipboard.SetTextAsync(hexValue);
+		  
+		   await Clipboard.SetTextAsync(hexValue);
 		  await DisplayAlert("Color", "Color copied", "OK");
      }
 }
